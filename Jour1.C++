@@ -182,6 +182,33 @@ int moyenne() {
     return 0;
 }
 
+int cube() {
+    int nombre;
+    int cube;
+    int somme_total = 0;
+
+    std::cout << "Entrez un nombre supérieur à 5 : ";
+    std::cin >> nombre;
+
+    if (nombre <= 5) {
+        std::cout << "Le nombre doit être supérieur à 5." << std::endl;
+        return 1;
+    }
+
+    for (int n = 5; n <= nombre; n++) {
+        cube = n * n * n;
+        somme_total += cube;
+    }
+
+    std::cout << "Somme totale des cubes : " << somme_total << std::endl;
+
+    return 0;
+}
+
+int inverser(){
+    
+}
+
 int main() {
-    return moyenne();
+    return cube();
 }
